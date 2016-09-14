@@ -1,0 +1,25 @@
+{
+  "name": "vvs-prototype-react-typescript",
+  "version": "0.1.0",
+  "description": "a prototype on how typescript integrates with react",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server --content-base ./ --config webpack.config.dev",
+    "bundle-dev": "webpack -d --config webpack.config.dev.js",
+    "bundle-prod": "webpack -p --config webpack.config.prod.js",
+    "postinstall": "npm link typescript && typings install"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}
